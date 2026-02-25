@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link href="./dist/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="quiz-app w-full max-w-200 bg-gray-100 p-3.75 shadow-lg rounded-lg"
+    >
+      <div
+        class="quiz-info flex justify-between bg-mainColor p-5 rounded-minRound"
+      >
+        <div class="category">Category: <span>HTML</span></div>
+        <div class="count">Questions Count: <span></span></div>
+      </div>
+      <div
+        class="quiz-area text-2xl font-bold bg-mainColor p-5 mt-3.75 rounded-t-minRound"
+      ></div>
+      <div class="answers-area bg-mainColor pb-5 px-5 rounded-b-minRound"></div>
+      <button
+        class="submit-button bg-perfect block w-full p-3.75 border-none text-mainColor font-bold text-lg cursor-pointer rounded-minRound my-3.75 mx-auto focus:outline-none transition hover:bg-blue-600"
+      >
+        Submit Answer
+      </button>
+      <div
+        class="bullets border-t border-[#dfdfdf] bg-mainColor flex justify-between p-5 rounded-minRound"
+      >
+        <div class="spans flex flex-1"></div>
+        <div class="countdown"></div>
+      </div>
+      <div class="results rounded-minRound text-center text-lg"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

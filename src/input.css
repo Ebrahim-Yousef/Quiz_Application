@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mainColor: #fff;
+  --color-perfect: #0075ff;
+  --radius-minRound: 6px;
+}
+body {
+  @apply min-h-screen overflow-hidden flex items-center justify-center;
+  font-family: Tahoma, Arial;
+}
+.quiz-app .answers-area .answer:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+.quiz-app .results span {
+  font-weight: bold;
+}
